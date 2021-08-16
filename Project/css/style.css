@@ -1,0 +1,315 @@
+*,html,body
+{
+    margin:0;
+    padding: 0;
+}
+
+header
+{
+    background-color: black;
+	font-family: "Lato", cursive;
+    line-height: 200px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+header nav
+{
+    float: right;
+}
+
+header nav ul li a
+{
+    padding-right: 30px;
+    font-weight: bold;
+	font-style: normal;
+	font-family: "Lato", normal;
+    color: white;
+    transition: all 0.5s ease-in;
+	text-transform: uppercase;
+}
+
+
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: red;
+}
+
+header nav ul a 
+{
+	padding-right: 30px;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Lato", normal;
+	color: red;
+	transition: 0.5s ease-in;
+	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
+	font-variant-position: sub;
+}
+
+header nav ul a:hover 
+{
+	text-decoration: none;
+	color: blue;
+}
+
+.img1
+{
+	background-color: orange;
+	background-size:100% 100%;
+}
+
+.slider,.slider,.slider ul li
+{
+	height: 820px;
+	width: 100%;
+	color: black;
+	font-family:monospace; 
+	text-align: center
+}
+
+.slider h2
+{
+	font-weight: bold;
+	font-family: "Lato", monospace;
+}
+
+
+.slider span
+{
+	color: red
+}
+
+
+.slider a
+{
+	padding: 10px
+}
+
+
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(b.jpg) no-repeat;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.login-box{
+	width: 10px;
+	position: absolute;
+	top: 75%;
+	left: 550px;
+	transform: translate(-30%,-30%);
+	color: black;
+}
+.login-box h1{
+	float:left;
+	font-size: 40px;
+	border-bottom: 5px solid red;
+	margin-bottom: 7px;
+	padding: 13px 0
+}
+.textbox{
+	width: 1800%;
+	overflow: hidden;
+	font-size: 	25px;
+	padding: 8px 0;
+	margin: 9px 0;
+	border-bottom: 1px solid red;	
+}
+.textbox i{
+	width: 5%;
+	float:left;
+	text-align:left;
+}
+.textbox input{
+	border: none;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 15px;
+	width: 120%;
+	float: left;
+	margin: 0 10px;
+}
+.btn{
+	width: 2000%;
+	background:none;
+	border: 2px solid red;
+	color: black;
+	padding: 4px;
+	font-size: 15px;	
+	cursor: pointer;
+	margin: 12px 0;
+}
+
+.content-wrapper {
+	text-align: left;
+	text-decoration:inherit;
+	color: blue;
+	font-family:cursive;
+	font-size: 20px;
+	display: grid;
+	background-color: greenyellow;
+}
+
+.two-column-wrapper {
+	display:grid;
+	grid-template-columns: 1fr 1fr
+}
+
+.profile-image-wrapper img {
+	width: 100%;
+	padding: 30px;
+}
+
+.profile-content-wrapper {
+	padding: 30px;
+}
+
+.profile-content-wrapper hi {
+	color: red
+}
+
+/* Master styles */
+body {
+	margin: 0px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 38px;
+}
+
+.left-side {
+	display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+	margin-right: 20px;
+	font-size: 0.98em;
+	text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+	border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+	color: black;
+}
+
+/* portfolio styles */
+
+.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+	position: relative;
+}
+
+.portfolio-img-background {
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 50%;
+	padding-right: 50%;
+}
+
+.logo-wrapper img {
+	width: 100%;
+	margin-bottom: 50px
+}
+
+.img-text-wrapper .subtitle {
+	transition: 1s;
+	font-weight: 600;
+	color: transparent;
+}
+.img-text-wrapper:hover .subtitle {
+	font-weight: 600;
+	color: yellow;
+}
+
+.img-darken {
+	transition: 3s;
+	filter: brightness(50%);
+}
+
+/* About page */
+.two-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr
+}
+
+.profile-image-wrapper img {
+	width: 100%;
+}
+
+.profile-content-wrapper {
+	padding: 30px;
+}
+
+.profile-content-wrapper hi {
+	color: red
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
